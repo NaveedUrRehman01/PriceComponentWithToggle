@@ -1,0 +1,218 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+body{
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+.slideshow-container {
+    position: relative;
+    background: #f1f1f1f1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+  }
+  #ptbg{
+    position: relative;
+    width: 400px;
+    height: 365px;
+    margin-left: 290px;
+    top: -2px;
+  }
+  #ptq{
+    position: relative;
+    width: 80px;
+    height: 80px;
+    top: -100px;
+    left: 165px;
+  }
+  .mySlides{
+    position: absolute ;
+    display: flex;
+    padding: 90px;
+    text-align: center;
+    width: 80%;
+  }
+  .content q{
+    text-align: start;
+    font-size: 25px;
+    color: rgb(44, 44, 44);
+  }
+  .content{
+    width: 60%;
+    padding-top: 50px;
+  }
+  .author{
+    margin-top: 20px;
+    font-weight: bold;
+  }
+  .author span{
+    color: rgb(44, 44, 44);
+    font-size: smaller;
+    padding-left: 10px;
+  }
+  .img img{
+    width: 300px;
+    height: 300px;
+   
+  }
+
+  .slidebtn {
+    cursor: pointer;
+    position: absolute;
+    top: 71%;
+    width: 70px;
+    height: 40px;
+    margin-top: -30px;
+    padding: 16px;
+    color: #888;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 25px;
+    user-select: none;
+    right: 39%;
+    background-color: aliceblue;
+  }
+  /* .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 70%;
+    width: auto;
+    margin-top: -30px;
+    padding: 16px;
+    color: #888;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  } */
+  /* Position the "next button" to the right */
+#next {
+    position: absolute;
+    left: 40px;
+    border-radius: 3px 0 0 3px;
+    background-color: aliceblue;
+    top: 13px;
+  }
+  #previous{
+    position: absolute;
+    right: 45px;
+    border-radius: 3px 0 0 3px;
+    background-color: aliceblue;
+    top: 13px;
+  }
+  /* On hover, add a black background color with a little bit see-through */
+  @media screen and (max-width: 600px) {
+    .slideshow-container {
+        position: relative;
+        background: #f1f1f1f1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100vh;
+      }
+      #ptbg{
+        position: relative;
+        width: 350px;
+        height: 355px;
+       top: -130px;
+       right: 297px
+        
+      }
+      #ptq{
+        position: relative;
+        width: 80px;
+        height: 80px;
+        top: 145px;
+        margin-left: 250px;
+      }
+      .mySlides{
+        position: absolute ;
+        display: flex;
+        flex-direction: column-reverse;
+        padding: 10px;
+        text-align: center;
+        width: 100%;
+        margin-top: 80px;
+      }
+      .content q{
+        text-align: center;
+        font-size: 25px;
+        color: rgb(44, 44, 44);
+      }
+      .content{
+        width: 100%;
+        padding-top: 10px;
+      }
+      .author{
+        margin-top: 20px;
+        font-weight: bold;
+      }
+      .img {
+       margin-bottom: 80px;
+      }
+      
+  .slidebtn {
+    cursor: pointer;
+    position: absolute;
+    top:54%;
+    width: 90px;
+    height: 40px;
+    margin-top: -30px;
+    padding: 16px;
+    color: #888;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 25px;
+    user-select: none;
+    
+    background-color: aliceblue;
+  }
+  #next {
+    position: absolute;
+    left: 65px;
+    border-radius: 3px 0 0 3px;
+    background-color: aliceblue;
+    top: 13px;
+  }
+  #previous{
+    position: absolute;
+    right: 65px;
+    border-radius: 3px 0 0 3px;
+    background-color: aliceblue;
+    top: 13px;
+  }
+  }
+  @media screen and (max-width: 900px) and (min-width: 600px) {
+   .mySlides{
+    position: absolute ;
+    display: flex;
+    text-align: start;
+    width: 100%;
+   }
+   .content{
+    width: 70%;
+  }
+  .slidebtn{
+    cursor: pointer;
+    position: absolute;
+    top: 64%;
+    width: 75px;
+    height: 40px;
+    margin-top: -30px;
+    padding: 16px;
+    color: #888;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 25px;
+    user-select: none;
+    right: 39%;
+    background-color: aliceblue;
+  }
+  }
